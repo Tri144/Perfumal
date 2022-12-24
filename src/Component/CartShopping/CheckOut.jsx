@@ -10,7 +10,7 @@ import {
   reduceQuantity,
   DeleteCart,
   confirmPayment,
-} from "../redux/reducers/users/users.action";
+} from "../../redux/reducers/users/users.action";
 
 const CheckOut = () => {
   const dispatch = useDispatch();

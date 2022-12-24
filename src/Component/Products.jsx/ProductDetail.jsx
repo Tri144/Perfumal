@@ -2,7 +2,7 @@ import React from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
-import { AddUser } from "../redux/reducers/users/users.action";
+import { AddUser } from "../../redux/reducers/users/users.action";
 import { toast } from "react-toastify";
 import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";

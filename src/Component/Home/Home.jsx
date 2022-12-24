@@ -1,8 +1,8 @@
 import React from "react";
 import { useSelector, useDispatch } from "react-redux";
-import { getProducts } from "../redux/reducers/products/products.action";
+import { getProducts } from "../../redux/reducers/products/products.action";
 import { useEffect } from "react";
-import Slideshow from "../Component/SlideShow";
+import Slideshow from "./SlideShow";
 import { useNavigate } from "react-router-dom";
 const Home = () => {
   const dispatch = useDispatch();

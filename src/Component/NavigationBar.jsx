@@ -3,7 +3,7 @@ import { NavLink, Outlet } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect } from "react";
 import { getUsers } from "../redux/reducers/users/users.action";
-import logo from "../images/logo.png";
+import logo from "../Logo/logo.png";
 import { BsCart, BsPerson } from "react-icons/bs";
 const NavigationBar = () => {
   const { isLoading, users } = useSelector((state) => state.users);

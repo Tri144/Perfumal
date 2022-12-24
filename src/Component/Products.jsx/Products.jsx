@@ -2,7 +2,7 @@ import React from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { useNavigate, Outlet } from "react-router-dom";
 import { useEffect, useState } from "react";
-import { getProducts } from "../redux/reducers/products/products.action";
+import { getProducts } from "../../redux/reducers/products/products.action";
 const Products = ({ show, setShow }) => {
   const { isLoading, products } = useSelector((state) => state.products);
   const navigate = useNavigate();

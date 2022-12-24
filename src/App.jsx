@@ -1,11 +1,11 @@
 import NavigationBar from "./Component/NavigationBar";
 import { Route, Routes, Navigate } from "react-router-dom";
-import ProductDetail from "./Component/ProductDetail";
+import ProductDetail from "./Component/Products.jsx/ProductDetail";
 import { useState } from "react";
-import UserDetail from "./page/UserDetail";
-import Home from "./page/Home";
-import Products from "./page/Products";
-import CheckOut from "./page/CheckOut";
+import UserDetail from "./Component/User/UserDetail";
+import Home from "./Component/Home/Home";
+import Products from "./Component/Products.jsx/Products";
+import CheckOut from "./Component/CartShopping/CheckOut";
 function App() {
   const [quantity, setQuantity] = useState(1);
   const [show, setShow] = useState(false);
