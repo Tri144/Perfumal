@@ -39,7 +39,6 @@ const ProductDetail = ({ show, setShow }) => {
     setQuantity(1);
   };
   const closed = () => {
-    console.log(show);
     setShow(false);
   };
   if (productsDetail != null) {

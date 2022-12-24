@@ -11,14 +11,10 @@ function App() {
   const [show, setShow] = useState(false);
   return (
     <div className="App bg-[#E5E7EB] h-screen">
-      <NavigationBar></NavigationBar>
+      <NavigationBar setShow={setShow}></NavigationBar>
       <Routes>
         <Route path="/" element={<Navigate to={"/home"}></Navigate>}></Route>
         <Route path="/home" element={<Home></Home>}></Route>
-        <Route
-          path="/products"
-          element={<Navigate to={"/products/1"}></Navigate>}
-        ></Route>
         <Route
           path="/products"
           element={<Products show={show} setShow={setShow}></Products>}

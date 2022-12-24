@@ -59,8 +59,8 @@ const CheckOut = () => {
     Swal.fire({
       title: "Do you to delete",
       showCancelButton: true,
-      confirmButtonText: "Save",
-      denyButtonText: `Don't save`,
+      confirmButtonText: "Yes",
+      denyButtonText: `No`,
     }).then((result) => {
       if (result.isConfirmed) {
         dispatch(DeleteCart(items));

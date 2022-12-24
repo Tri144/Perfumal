@@ -5,8 +5,8 @@ import { useEffect } from "react";
 import { getUsers } from "../redux/reducers/users/users.action";
 import logo from "../Logo/logo.png";
 import { BsCart, BsPerson } from "react-icons/bs";
-const NavigationBar = () => {
-  const { isLoading, users } = useSelector((state) => state.users);
+const NavigationBar = ({ setShow }) => {
+  const { users } = useSelector((state) => state.users);
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(getUsers());
@@ -26,7 +26,11 @@ const NavigationBar = () => {
             <h1 className="font-bold text-black text-2xl w-1/2">Perfumer</h1>
           </NavLink>
           <div className="md:flex md:w-3/5 hidden items-center justify-center">
-            <NavLink to={"/products"} className="text-2xl font-bold">
+            <NavLink
+              to={"/products"}
+              className="text-2xl font-bold"
+              onClick={() => setShow(false)}
+            >
               Products
             </NavLink>
           </div>
